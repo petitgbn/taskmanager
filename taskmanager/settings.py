@@ -17,7 +17,7 @@ import dj_database_url
 
 
 environ=environ.Env()
-environ.Env.read.env()
+environ.Env.read_env() ✅
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
