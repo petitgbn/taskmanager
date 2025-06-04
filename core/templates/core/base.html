@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SaaS TaskManager</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <p>Bienvenue, {{ user.username }} | <a href="{% url 'logout' %}">Déconnexion</a></p>
+    {% endif %}
+    {% block content %}{% endblock %}
+</body>
+</html>
